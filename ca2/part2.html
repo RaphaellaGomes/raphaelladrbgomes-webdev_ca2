@@ -46,9 +46,8 @@
                     <button name="2.3" class="btn btn-success btn-block" data-sql="SELECT * FROM employees where gender = 'F' LIMIT 100" onClick="reply_click(this)">2.3</button>
                     <button name="2.4" class="btn btn-success btn-block" data-sql="SELECT * FROM employees where last_name = 'Simmel' AND hire_date < '1986-01-01'LIMIT 100" onClick="reply_click(this)">2.4</button>
                     <button name="2.5" class="btn btn-success btn-block" data-sql="SELECT count(*) AS totalWithB FROM employees where last_name LIKE 'B%' LIMIT 100" onClick="reply_click(this)">2.5</button>
-                    <button name="2.6" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training (trainer_no INT NOT NULL AUTO_INCREMENT, first_name VARCHAR(30) NOT NULL, last_name VARCHAR(30) NOT NULL, t_module VARCHAR(20) NULL, PRIMARY KEY (trainer_no))
-                      " onClick="reply_click(this)">2.6</button>
-                    <button name="2.7" class="btn btn-success btn-block" data-sql="INSERT INTO emp_training (first_name, last_name, t_module) VALUES ('Joe','Bloggs','Google Docs'), ('Fred ','Bloggs','Google Sheets')" onClick="reply_click(this)">2.7</button>
+                    <button name="2.6" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training ('trainer_no' INTEGER PRIMARY KEY AUTOINCREMENT, 'first_name' VARCHAR(30) NOT NULL, 'last_name' VARCHAR(30) NOT NULL,'t_module' VARCHAR(20) NULL );" onClick="reply_click(this)">2.6</button>
+                    <button name="2.7" class="btn btn-success btn-block" data-sql="INSERT INTO 'emp_training' ('first_name', 'last_name', 't_module') VALUES ('Joe', 'Bloggs', 'Google Docs'), ('Fred ','Bloggs','Google Sheets')" onClick="reply_click(this)">2.7</button>
                     <button name="2.8" class="btn btn-success btn-block" data-sql="DROP TABLE emp_training" onClick="reply_click(this)">2.8</button>
                     <button name="2.9" class="btn btn-success btn-block" data-sql="ALTER TABLE employees ADD email_address VARCHAR(20);" onClick="reply_click(this)">2.9</button>
                     <button name="2.10" class="btn btn-success btn-block" data-sql="UPDATE employees SET email_address = 'gfacello@gmail.com' WHERE emp_id = 10001" onClick="reply_click(this)">2.10</button>
